@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+
+    <!-- icon from: https://img.icons8.com/fluency/48/cloud-lighting.png -->
+    <link rel="icon" type="image/png" href="/image/icon.png">
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="search-box">
+            <span class="material-symbols-outlined icon-location">location_on</span>
+            <input type="text" placeholder="Enter a Location" id="city">
+            <button class="btn-search">
+                <span class="material-symbols-outlined icon-search">search</span>
+            </button>
+        </div>
+
+        <div class="weather-box">
+            <h1 class="city"></h1>
+            <img>
+            <div class="weather-main">
+                <div class="weather-temp">
+                    <h2 class="temp"></h2>
+                </div>
+                <h2 class="main"></h2>
+                <h3 class="description"></h3>
+            </div>
+            
+        </div>
+
+        <div class="weather-details">
+
+            <div class="feels-like">
+                <div class="feels-like-detail">
+                    <h4>
+                        <i class="ti ti-mood-wink-2"></i> Feels Like
+                    </h4>
+                </div>
+                <h2 id="feels-like"></h2>
+            </div>
+
+            <div class="humidity">
+                <div class="humidity-detail">
+                    <h4>
+                        <i class="ti ti-ripple"></i> Humidity
+                    </h4>
+                </div>
+                <h2 id="humidity"></h2>
+            </div>
+
+            <div class="wind">
+                <div class="wind-detail">
+                    <h4>
+                        <i class="ti ti-wind"></i> Wind
+                    </h4>
+                </div>
+                <h2 id="wind"></h2>
+            </div>
+
+            <div class="temp-min">
+                <div class="temp-min-detail">
+                    <h4>
+                        <i class="ti ti-sun-low"></i> Min
+                    </h4>
+                </div>
+                <h2 id="temp-min"></h2>
+
+            </div>
+
+            <div class="temp-max">
+                <div class="temp-max-detail">
+                    <h4>
+                        <i class="ti ti-sun-high"></i> Max
+                    </h4>
+                </div>
+                <h2 id="temp-max"></h2>
+            </div>
+
+        </div>
+
+        <div class="errorDisplay">
+            <img>
+            <p></p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; Copyright 2023 by Kanidtha</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
